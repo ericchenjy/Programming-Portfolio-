@@ -1,0 +1,35 @@
+.header {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    position:sticky;
+
+    ul{
+        margin: 0;
+        padding: 20px 20px 20px 60px;
+        list-style: none;
+        display:flex;
+        justify-content:left;
+        background-color: pink;
+        width: 100%;
+
+        li{
+            margin-right: 3%;
+            font-size: 26px;
+    }
+}
+}
+
+.potfolio{
+    display:flex;
+    justify-content: center;
+
+    .introduction{
+        justify-content: center;
+    }
+
+    .profile-image{
+        width: 100px;
+    }
+}

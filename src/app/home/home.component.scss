@@ -89,6 +89,15 @@
   
   }
   
-  .projects{
+  .project-section{
+
     display: flex;
+    border-bottom: solid 1px black;
+    justify-content: space-around;
+
+    .project{
+        width: 200%;
+        height: 300px;
+        background-color: aquamarine;
+    }
   }

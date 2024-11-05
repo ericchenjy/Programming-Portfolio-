@@ -1,28 +1,98 @@
 .header {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background-color: #219ebc;
-    position: sticky;
-    
-    ul{
-        margin: 0;
-        padding: 20px 20px 20px 60px;
-        list-style: none;
-        display:flex;
-        justify-content:left;
-        color:aliceblue;
-        font-weight: 500;
-        position: sticky;
+    .logo-section{
+        width: 30%;
 
-        li{
-            margin-right: 3%;
+        img{
+            margin:0 0 0 60px;
+            padding: 10px 0;
+            width: 160px;
+            max-width: 100%;
+            min-width: 10%;
+        }
+    }
+
+    .menu-section{
+        width: 70%;
+        margin: 0 60px 0 0;
+        height: fit-content;
+        align-self: center;
+
+        button{
             font-size: 26px;
             cursor: pointer;
-        }  
+            color: #0cc0df;
+            font-weight: 500;
+            border: none;
+            background: none;
+            width: 150px;
+        }
         
-        li:hover{
+        button:hover{
+            opacity: 60%;
+            border-radius: 20px;
+            color:white;
+            background-color:#0cc0df
+        }
+    }
+}
+
+
+/*screen smaller than 600----------------*/
+@media only screen and (max-width: 900px){
+    .header-sm{
+        display: none;
+
+        .logo-section{
+            width: 30%;
+
+            img{
+
+                padding: 10px 0;
+                width: 120px;
+                max-width: 100%;
+                min-width: 10%;
+            }
+        }
+
+        .menu-icon-click{
+            width: 30px;
+            fill: #0cc0df;
+            cursor: pointer;
+        }
+
+        .menu-icon-click:hover{
             opacity: 60%;
         }
-}
+
+        .menu-icon-click-after{
+            width: 30px;
+            fill: #0cc0df;
+            cursor: pointer;
+            rotate: 90deg;
+        }
+
+
+        .menu-section-sm{
+
+            button{
+                padding: 8px 0;
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+                color: #0cc0df;
+                background: none;
+                border: none;
+                border-bottom: 1px solid #348492;
+            }
+            
+            button:hover{
+                opacity: 60%;
+                color:white;
+                background-color:#0cc0df
+            }
+        }
+        
+    }
+
+   
 }

@@ -1,8 +1,56 @@
-<div class="header">
-    <ul class="">
-      <li (click)="projectPage('/home')">Home</li>
-      <li (click)="projectPage('/project')">Project</li>
-      <li (click)="projectPage('/about')">About</li>
-      <li (click)="projectPage('/contact')">Contact</li>
-    </ul>
-</div>
+<!--Screen size bigger than 600-->
+<nav *ngIf="!screenSize" class="header	d-flex justify-content-start p-0 mt-0">
+  <div class="logo-section justify-content-center">
+    <img src="assets/Images/EC Development.png">
+  </div> 
+
+  <menu class="menu-section d-flex flexbox flex-row justify-content-between">
+      <button (click)="projectPage('/home')">Home</button>
+      <button (click)="projectPage('/project')">Project</button>
+      <button (click)="projectPage('/about')">About</button>
+      <button (click)="projectPage('/contact')">Contact</button>
+  </menu>
+</nav>
+
+
+<!--Also can use the folloing bootstrap bode to change the screen size instead of typescript -->
+<!-- </d-none d-lg-flex d-xl-flex w-100 >  d-lg-none-->
+
+
+<!--Screen size smaller than 600-->
+<nav  *ngIf="screenSize" class="header-sm w-100  d-flex flex-auto flex-column">
+
+  <div class="d-flex flex-auto flex-row justify-content-between">
+
+    <div class="logo-section justify-content-start mx-3">
+      <img src="assets/Images/EC Development.png">
+    </div> 
+
+    <div *ngIf="menuButtonChange" (click)="showCloseMenuListAndButtonChange()" class="menu-icon-click d-flex flex-auto justify-content-end  mx-3">
+      <svg class="menu-icon"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+      </svg>
+    </div>
+
+    <div *ngIf="!menuButtonChange" (click)="showCloseMenuListAndButtonChange()" class="menu-icon-click-after d-flex flex-auto justify-content-end  mx-3">
+      <svg class="menu-icon"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+      </svg>
+    </div>
+
+   </div>
+
+  <div>
+    <menu *ngIf="!menuList" class="menu-section-sm d-flex flex-none flex-column p-0">
+      <button (click)="projectPage('/home')">Home</button>
+      <button (click)="projectPage('/project')">Project</button>
+      <button (click)="projectPage('/about')">About</button>
+      <button (click)="projectPage('/contact')">Contact</button>
+    </menu>
+  </div>
+  
+</nav>
+
+
+
+

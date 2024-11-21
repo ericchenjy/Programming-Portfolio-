@@ -1,1 +1,19 @@
 <app-menu-bar></app-menu-bar>
+
+
+<!--Project Section-->
+<div class="project-section d-flex flex-column">
+
+    <div class="d-flex flex-row justify-content-around align-items-center">
+  
+         <!--Projects----------->
+         <div *ngFor="let project of projectList" class="peerly-project d-flex flex-column justify-content-around align-items-center" [style.background-color]="project.background_color">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <img [src]="project.image" palt="image">
+            <div class="skills-list d-flex flex-wrap justify-content-center align-items-center">
+              <p *ngFor="let skills of project.skills">{{skills}}</p>
+            </div>
+          </div>
+        </div>
+  
+  </div>

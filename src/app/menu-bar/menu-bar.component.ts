@@ -14,7 +14,7 @@ export class MenuBarComponent {
   constructor(private router: Router){
   }
 
-  projectPage(path: string): void{
+  pageRouter(path: string): void{
     this.router.navigate([path]);
 
     this.menuList = !this.menuList;

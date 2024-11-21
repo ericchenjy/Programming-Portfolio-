@@ -85,42 +85,53 @@
 
 
 <!--Project Section-->
-<div class="project-section d-flex flex-column">
+<div *ngIf="!screenSize"  class="project-section d-grid">
 
-  <!--section 1------------------->
-  <div class="d-flex flex-row justify-content-around align-items-center">
+  <!--Projects----------->
+  <div 
+    *ngFor="let project of projectList | slice: 0:3" 
+    class="peerly-project justify-content-around align-items-center" 
+    [style.background-color]="project.background_color">
 
-    <!--Project 1----------->
-    <div class="peerly-project d-flex flex-column justify-content-around align-items-center" style="background-color: #E7FAFE">
-      <!-- <p class="title">Peerly Agent Platform</p> -->
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <img src="assets/Images/Peerly Project.png" alt="Peerly">
-        <div class="skills-list d-flex flex-wrap justify-content-center align-items-center">
-          <p>Angular Framework</p>
-          <p>Typescript</p>
-          <p>Node.js</p>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>Bootstrap</p>
-          <p>Figma</p>
-        </div>
-      </div>
-    </div>
-
-   <!--Project 2----------->
-   <div class="peerly-project d-flex flex-column justify-content-around align-items-center" style="background-color: #D7F1F5">
-    <!-- <p class="title">Peerly Agent Platform</p> -->
     <div class="d-flex flex-column justify-content-center align-items-center">
-      <img src="assets/Images/EC Digitalss Project.png" alt="Peerly">
+      <img [src]="project.image" palt="image">
       <div class="skills-list d-flex flex-wrap justify-content-center align-items-center">
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Bootstrap</p>
-        <p>Figma</p>
+      <p *ngFor="let skills of project.skills">{{skills}}</p>
       </div>
     </div>
   </div>
+
+  <div class="more-section d-flex flex-none justify-content-center w-100">
+    <button (click)="pageRouter('/project')" class="project-button w-100"> More Projects...</button>
+  </div>
+
 </div>
 
 
+
+<div *ngIf="screenSize" class="project-section">
+
+  <!--Projects----------->
+  <div 
+    *ngFor="let project of projectList | slice: 0:3" 
+    class="peerly-project justify-content-around align-items-center" 
+    [style.background-color]="project.background_color">
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <img [src]="project.image" palt="image">
+      <div class="skills-list d-flex flex-wrap justify-content-center align-items-center">
+      <p *ngFor="let skills of project.skills">{{skills}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-section d-flex flex-none justify-content-center w-100">
+    <button (click)="pageRouter('/project')" class="project-button w-100"> More Projects...</button>
+  </div>
+
+</div>
+
+
+<div>
+  
 </div>

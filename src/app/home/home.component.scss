@@ -111,6 +111,8 @@
   
 .project-section{
 
+    grid-template-columns: repeat(2, 1fr);
+
     .peerly-project{
         width: 100%;
         height: 100%;
@@ -144,13 +146,43 @@
             }
     }
 
+    .peerly-project:hover{
+        opacity: 60%;
+        cursor: pointer;
+    }
+
+
+    .more-section{
+        height: 100%;
+        
+        .project-button{
+            border: none;
+            font-size: 45px;
+            background-color: #E7FAFE;
+        }
+    }
+
+    .more-section:hover{
+        opacity: 60%;
+    }
+
 }
 
+@media only screen and (max-width: 900px){
 
-
-
-
-
+    .project-section{
+    .more-section{
+        height: 200px;
+        min-height: 20%;
+        
+        .project-button{
+            border: none;
+            font-size: 20px;
+            background-color: #E7FAFE;
+        }
+    }
+}
+}
 
 
 

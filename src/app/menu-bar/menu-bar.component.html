@@ -5,10 +5,10 @@
   </div> 
 
   <menu class="menu-section d-flex flexbox flex-row justify-content-between">
-      <button (click)="projectPage('/home')">Home</button>
-      <button (click)="projectPage('/project')">Project</button>
-      <button (click)="projectPage('/about')">About</button>
-      <button (click)="projectPage('/contact')">Contact</button>
+      <button (click)="pageRouter('/home')">Home</button>
+      <button (click)="pageRouter('/project')">Project</button>
+      <button (click)="pageRouter('/about')">About</button>
+      <button (click)="pageRouter('/contact')">Contact</button>
   </menu>
 </nav>
 
@@ -42,10 +42,10 @@
 
   <div>
     <menu *ngIf="!menuList" class="menu-section-sm d-flex flex-none flex-column p-0">
-      <button (click)="projectPage('/home')">Home</button>
-      <button (click)="projectPage('/project')">Project</button>
-      <button (click)="projectPage('/about')">About</button>
-      <button (click)="projectPage('/contact')">Contact</button>
+      <button (click)="pageRouter('/home')">Home</button>
+      <button (click)="pageRouter('/project')">Project</button>
+      <button (click)="pageRouter('/about')">About</button>
+      <button (click)="pageRouter('/contact')">Contact</button>
     </menu>
   </div>
   

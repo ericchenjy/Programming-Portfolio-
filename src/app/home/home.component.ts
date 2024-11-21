@@ -1,4 +1,6 @@
 import { Component, HostListener} from '@angular/core';
+import { projects } from '../project/project-data';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +11,21 @@ import { Component, HostListener} from '@angular/core';
 export class HomeComponent {
 screenSize: boolean = window.innerWidth < 900;
 
+  projectList = projects
+
+  constructor(private router: Router){
+  }
+  
+  pageRouter(path: string): void{
+    this.router.navigate([path]);
+  }
+
+
   @HostListener('window:resize',['$event'])
   screenSizeChecking(event: Event): void{
     this.screenSize = window.innerWidth < 900;
   }
   
+
+
 }

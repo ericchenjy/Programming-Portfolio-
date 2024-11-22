@@ -1,6 +1,7 @@
 import { Component, HostListener} from '@angular/core';
 import { projects } from '../project/project-data';
 import { Router } from '@angular/router';
+import { workExperiences } from '../about/work-experiences';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,10 @@ import { Router } from '@angular/router';
 })
 
 export class HomeComponent {
-screenSize: boolean = window.innerWidth < 900;
+  screenSize: boolean = window.innerWidth < 900;
 
-  projectList = projects
+  projectList = projects;
+  workExperiences = workExperiences;
 
   constructor(private router: Router){
   }
@@ -25,7 +27,6 @@ screenSize: boolean = window.innerWidth < 900;
   screenSizeChecking(event: Event): void{
     this.screenSize = window.innerWidth < 900;
   }
-  
 
 
 }

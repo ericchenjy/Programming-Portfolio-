@@ -111,6 +111,7 @@
   
 .project-section{
 
+    margin-bottom:100px;
     grid-template-columns: repeat(2, 1fr);
 
     .peerly-project{
@@ -168,6 +169,79 @@
 
 }
 
+.work-section{
+
+    .work-section-list{
+
+        .experience{
+
+            .left-side{
+
+                width: 12%;
+                justify-items: center;
+
+                .work-logo{
+                    width: 10rem;
+                }
+
+                .work-date{
+                    width: fit-content;
+                }
+            }
+
+            .seperator{
+                margin: 0 10rem;
+
+                .circle{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-color: #E7FAFE;
+                    position: absolute;
+                    
+                }
+
+                .line {
+                    height: 10rem;
+                    width: 10px;
+                    background-color: #E7FAFE;
+                }
+
+            }
+
+            .right-side{
+                text-align: left;
+                width: 40%;
+            }
+        }
+    }
+
+    .more-work-experience{
+
+        margin-bottom: 100px;
+
+        button{
+            width: 70%;
+            height: 60px;
+            border: none;
+            background-color: #E7FAFE;
+            border-radius: 20px;
+        }
+
+        button:hover{
+            opacity: 60%;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+//Media Section--------------------
 @media only screen and (max-width: 900px){
 
     .project-section{
@@ -183,11 +257,6 @@
     }
 }
 }
-
-
-
-
-
 
 @media only screen and (max-width: 1250px){
     .name-image{  

@@ -107,8 +107,7 @@
 
 </div>
 
-
-
+<!--Project Section Mobile screen-->
 <div *ngIf="screenSize" class="project-section">
 
   <!--Projects----------->
@@ -132,6 +131,49 @@
 </div>
 
 
-<div>
-  
+<!--Work Experience -->
+<div class="work-section d-flex flex-column text-center">
+  <div 
+      *ngFor="let experiences of workExperiences | slice: 0:3" class="work-section-list">
+
+      <div class="experience d-flex flexbox flex-row justify-content-center align-items-center">
+
+        <div class="left-side just">
+
+          <img class="work-logo" [src]="experiences.work_logo">
+
+          <div class="work-date">
+            {{experiences.work_dates}}
+          </div>
+
+        </div>
+
+        <div class="seperator d-flex flex-auto  justify-content-center align-items-center">
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+    
+        <div class="right-side d-flex flex-column align-content-start">
+          <div class="work-title">
+            <b>{{experiences.work_title}}</b>
+          </div>
+
+          <div class="work-company-location">
+            {{experiences.work_commpany}} | {{experiences.work_location}}
+          </div>
+
+          <div class="work-description">
+            {{experiences.work_description}}
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="more-work-experience mt-5">
+    <button>More Job Experience...</button>
+  </div>
+
 </div>
+
+<app-footer></app-footer>

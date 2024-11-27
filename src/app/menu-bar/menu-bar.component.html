@@ -1,7 +1,9 @@
 <!--Screen size bigger than 600-->
 <nav *ngIf="!screenSize" class="header	d-flex justify-content-start p-0 mt-0">
   <div class="logo-section justify-content-center">
-    <img src="assets/Images/EC Development.png">
+    <img (click)="pageRouter('/home')"
+          style="cursor: pointer; "
+          src="assets/Images/EC Development.png">
   </div> 
 
   <menu class="menu-section d-flex flexbox flex-row justify-content-between">
@@ -23,7 +25,9 @@
   <div class="d-flex flex-auto flex-row justify-content-between">
 
     <div class="logo-section justify-content-start mx-3">
-      <img src="assets/Images/EC Development.png">
+      <img (click)="pageRouter('/home')"
+      style="cursor: pointer; "
+      src="assets/Images/EC Development.png">
     </div> 
 
     <div *ngIf="menuButtonChange" (click)="showCloseMenuListAndButtonChange()" class="menu-icon-click d-flex flex-auto justify-content-end  mx-3">

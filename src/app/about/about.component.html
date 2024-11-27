@@ -1,1 +1,103 @@
 <app-menu-bar></app-menu-bar>
+
+<!--Work Experience Mobile --------------------------------->
+<div *ngIf="screenSize"  class="work-section-mobile d-flex flex-column text-center mt-5">
+
+    <!--Work List-->
+      <div 
+          *ngFor="let experiences of workExperiences"
+          class="work-section-list d-flex flex-row ">
+  
+          <!--Line Design-->
+          <div class="seperator d-flex flex-auto justify-content-center">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+  
+          <!--Work list -->
+          <div class="work-list d-flex flex-column align-content-start">
+  
+            <!--Top section-------->
+            <div class="top-section d-flex flex-row justify-content-between align-items-center mb-3">
+              <img class="work-logo" [src]="experiences.work_logo">
+  
+              <div class="work-date">
+                {{experiences.work_dates}}
+              </div>
+            </div>
+  
+            <!--Bottom Section-->
+            <div class="bottom-section d-flex flex-column align-content-start">
+                <div class="work-title">
+                  <b>{{experiences.work_title}}</b>
+                </div>
+      
+                <div class="work-company-location">
+                  {{experiences.work_commpany}} | {{experiences.work_location}}
+                </div>
+      
+                <div class="line-between">
+      
+                </div>
+      
+                <div class="work-description">
+                  <p> <b>Skills:</b> {{experiences.work_description}} </p>
+                </div>
+          
+            </div>
+        </div>
+  
+    </div>
+  
+  
+  </div>
+  
+  <!--Work Experience -->
+  <div *ngIf="!screenSize" class="work-section d-flex flex-column text-center  mt-5">
+  
+    <div 
+        *ngFor="let experiences of workExperiences" class="work-section-list">
+  
+        <div class="experience d-flex flexbox flex-row justify-content-center align-items-center">
+  
+          <!--Left Side---------->
+          <div class="left-side">
+  
+            <img class="work-logo" [src]="experiences.work_logo">
+  
+            <div class="work-date mt-2">
+              {{experiences.work_dates}}
+            </div>
+  
+          </div>
+  
+          <div class="seperator d-flex flex-auto  justify-content-center align-items-center">
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+      
+          <!--Right Side---------->
+          <div class="right-side d-flex flex-column align-content-start">
+  
+            <div class="work-title">
+              <b>{{experiences.work_title}}</b>
+            </div>
+  
+            <div class="work-company-location">
+              {{experiences.work_commpany}} | {{experiences.work_location}}
+            </div>
+  
+            <div class="line-between">
+  
+            </div>
+  
+            <div class="work-description">
+              <p> <b>Skills:</b> {{experiences.work_description}} </p>
+            </div>
+          </div>
+  
+      </div>
+    </div>
+  
+  </div>
+  

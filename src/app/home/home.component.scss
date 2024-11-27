@@ -155,7 +155,7 @@
 
     .more-section{
         height: 100%;
-        
+
         .project-button{
             border: none;
             font-size: 45px;
@@ -170,27 +170,25 @@
 }
 
 .work-section{
-
     .work-section-list{
-
         .experience{
 
             .left-side{
 
-                width: 12%;
+                width: 20%;
                 justify-items: center;
 
                 .work-logo{
-                    width: 10rem;
+                    width: 80%;
                 }
 
                 .work-date{
-                    width: fit-content;
+                    font-size: 12px;
                 }
             }
 
             .seperator{
-                margin: 0 10rem;
+                margin: 0 8rem;
 
                 .circle{
                     width: 50px;
@@ -198,13 +196,13 @@
                     border-radius: 100%;
                     background-color: #E7FAFE;
                     position: absolute;
-                    
                 }
 
                 .line {
-                    height: 10rem;
+                    height: 13rem;
                     width: 10px;
                     background-color: #E7FAFE;
+                 
                 }
 
             }
@@ -212,6 +210,28 @@
             .right-side{
                 text-align: left;
                 width: 40%;
+
+                .work-title{
+                    font-size: 20px;
+                }
+
+                .work-company-location{
+                    font-size: 14px;
+                }
+
+                .work-description{
+                    color:dimgray;
+                    font-size: 16px;
+                }
+
+                .line-between{
+                    margin: 1% 0;
+                    width: 90%;
+                    height: 2px;
+                    background-color: #E7FAFE;
+                    border-radius: 20px;
+                }
+
             }
         }
     }
@@ -221,7 +241,7 @@
         margin-bottom: 100px;
 
         button{
-            width: 70%;
+            width: 80%;
             height: 60px;
             border: none;
             background-color: #E7FAFE;
@@ -241,22 +261,207 @@
 
 
 
+
+
+
 //Media Section--------------------
-@media only screen and (max-width: 900px){
+
+@media only screen and (max-width: 899px){
 
     .project-section{
-    .more-section{
-        height: 200px;
-        min-height: 20%;
+
+        .more-section{
+            width: 100%; 
+            height: 500px; 
+              
+            .project-button{
+                border: none;
+                font-size: 20px;
+                background-color: #E7FAFE;
+            }
+        }
+    }
+
+    .work-section-mobile{
+
+
+        .work-section-list{
+            .seperator{
+                margin: 0 5rem;
+
+                .circle{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    background-color: #E7FAFE;
+                    position: absolute;    
+                }
+
+                .line {
+                    height: 13rem;
+                    width: 8px;
+                    background-color: #E7FAFE;
+                }
+
+            }
+
+            .work-list{
+                .top-section{
+                    width: 80%;
+                    justify-items: center;
         
-        .project-button{
-            border: none;
-            font-size: 20px;
-            background-color: #E7FAFE;
+                    .work-logo{
+                        width: 30%;
+                        min-width: 25%;
+                    }
+        
+                    .work-date{
+                        font-size: 13px;
+                    }
+                }
+
+                .bottom-section{
+                    text-align: left;
+                    width: 90%;
+    
+                    .work-title{
+                        font-size: 17px;
+                    }
+    
+                    .work-company-location{
+                        font-size: 13px;
+                    }
+    
+                    .work-description{
+                        color:dimgray;
+                        font-size: 13px;
+                    }
+    
+                    .line-between{
+                        margin: 1% 0;
+                        width: 90%;
+                        height: 2px;
+                        background-color: #E7FAFE;
+                        border-radius: 20px;
+                    }
+                }
+
+            }
+        }
+
+        .more-work-experience{
+
+            margin-bottom: 100px;
+    
+            button{
+                width: 80%;
+                height: 60px;
+                border: none;
+                background-color: #E7FAFE;
+                border-radius: 20px;
+            }
+    
+            button:hover{
+                opacity: 60%;
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .work-section-mobile{
+        .work-section-list{
+
+            .seperator{
+                margin: 0 3em;
+
+                .circle{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    background-color: #E7FAFE;
+                    position: absolute;    
+                }
+
+                .line {
+                    height: 12rem;
+                    width: 6px;
+                    background-color: #E7FAFE;
+                }
+
+            }
+
+            .work-list{
+                .top-section{
+                    width: 80%;
+                    justify-items: center;
+        
+                    .work-logo{
+                        width: 25%;
+                        min-width: 15%;
+                    }
+        
+                    .work-date{
+                        font-size: 11px;
+                    }
+                }
+
+                .bottom-section{
+                    text-align: left;
+                    width: 90%;
+    
+                    .work-title{
+                        font-size: 15px;
+                    }
+    
+                    .work-company-location{
+                        font-size: 11px;
+                    }
+    
+                    .work-description{
+                        color:dimgray;
+                        font-size: 11px;
+                    }
+    
+                    .line-between{
+                        margin: 1% 0;
+                        width: 90%;
+                        height: 2px;
+                        background-color: #E7FAFE;
+                        border-radius: 20px;
+                    }
+                }
+
+            }
+        }
+
+        .more-work-experience{
+
+            margin-bottom: 100px;
+    
+            button{
+                width: 80%;
+                height: 60px;
+                border: none;
+                background-color: #E7FAFE;
+                border-radius: 20px;
+            }
+    
+            button:hover{
+                opacity: 60%;
+            }
         }
     }
 }
-}
+
+
+
+
+
 
 @media only screen and (max-width: 1250px){
     .name-image{  
@@ -307,6 +512,21 @@
 }
 
 @media only screen and (max-width: 667px){
+    
+    .project-section{
+
+        .more-section{
+            width: 100%; 
+            height: 400px; 
+              
+            .project-button{
+                border: none;
+                font-size: 20px;
+                background-color: #E7FAFE;
+            }
+        }
+    }
+    
     .name-image-mobile{  
         .introduction{   
             .main-text{
@@ -345,7 +565,23 @@
     }
 }
 
+
+
 @media only screen and (max-width: 450px){
+
+    .project-section{
+
+        .more-section{
+            width: 100%; 
+            height: 300px; 
+              
+            .project-button{
+                border: none;
+                font-size: 20px;
+                background-color: #E7FAFE;
+            }
+        }
+    }
     .name-image-mobile{  
         .introduction{   
             .main-text{

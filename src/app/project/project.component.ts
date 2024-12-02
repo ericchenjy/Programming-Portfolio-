@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { projects } from './project-data';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project',
@@ -9,4 +10,11 @@ import { projects } from './project-data';
 export class ProjectComponent {
   
   projectList = projects
+
+  constructor(private router: Router){}
+
+  pageRouter(id: number):void{
+    this.router.navigate(['project-details', id]);
+  }
+
 }

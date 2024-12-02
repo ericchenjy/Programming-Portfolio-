@@ -2,6 +2,7 @@ import { Component, HostListener} from '@angular/core';
 import { projects } from '../project/project-data';
 import { Router } from '@angular/router';
 import { workExperiences } from '../about/work-experiences';
+import { skills } from './skills';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ export class HomeComponent {
 
   projectList = projects;
   workExperiences = workExperiences;
+  skills = skills;
 
   constructor(private router: Router){
   }

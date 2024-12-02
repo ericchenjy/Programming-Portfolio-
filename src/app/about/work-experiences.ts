@@ -12,7 +12,7 @@ export const workExperiences =  [
 
     {
         work_logo: "assets/Images/University of Guelph.png",
-        work_title: "Junior Analysis Internship ",
+        work_title: "Junior Analyst Internship ",
         work_dates: "Jan 2021 - Aug 2021",
         work_location: "Guelph, Ontario, Canada",
         work_commpany: "University of Guelph",

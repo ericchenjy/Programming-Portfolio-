@@ -26,68 +26,72 @@
 
 
 <!--Skills Section Mobile Screen----------------------------->
-<div *ngIf="screenSize" class="skills-sec-mobile d-flex flex-auto justify-content-center">
-  <div class="items d-flex flex-column justify-content-between">
-    <ul class="align-items-center">
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"></li>
-      <li><img src="https://seeklogo.com/images/R/rxjs-logo-DD3DF87EEF-seeklogo.com.png"></li>
-      <li><img src="https://static-00.iconduck.com/assets.00/jquery-original-wordmark-icon-485x512-7kn0h2yt.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"></li>
-    </ul>
-    <ul class="align-items-center">
-      <li><img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"></li>
-      <li><img src="https://img.icons8.com/?size=512&id=40670&format=png"></li>
-      <li><img style="height: 60px;"src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/1200px-VB.NET_Logo.svg.png"></li>
-    </ul>
-    <ul class="align-items-center">
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"></li>
-      <li><img src ="https://ionicacademy.com/wp-content/uploads/2017/06/ionic-logo-portrait.png"></li>
-       <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkt5wzZ1LZXdBJSY1lele-BsBxzSxDph8TQA&s?"></li>
-      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdd25hyNQOMs4Xx1Cv_A_oaT0zagfSWlXMBA&s"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Firebase_Logo.png"></li>
-    </ul>
-    <ul class="align-items-center">
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png"></li>
-      <li><img src="https://seeklogo.com/images/U/ubuntu-logo-9AB6506706-seeklogo.com.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"></li>
-      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx28mg8aQ39CEGURVztotd5VC0bO7Ik-ZpBw&s"></li>
-      <li><img src="https://www.drupal.org/files/Wordmark_blue_RGB.png"></li>
-    </ul>
+<div *ngIf="screenSize" class="skills-sec-mobile d-flex flex-column  justify-content-center align-content-center align-items-center">
+
+  <div class="item-list d-flex flex-row">
+    <div *ngFor="let skill of skills | slice: 0:5"
+          class="items justify-content-between d-flex flex-column align-self-center" >
+      <img class="" 
+           [src]="skill.skillIcon" 
+           [ngStyle]=""alt="Skill Icon">
+    </div>
   </div>
+
+  <div class="item-list d-flex flex-row">
+    <div *ngFor="let skill of skills | slice: 5:10"
+                  class="items justify-content-between d-flex flex-column align-self-center" >
+      <img class="" [src]="skill.skillIcon" alt="Skill Icon">
+    </div>
+  </div>  
+
+  <div class="item-list d-flex flex-row">
+    <div *ngFor="let skill of skills | slice: 10:15"
+                  class="items justify-content-between d-flex flex-column align-self-center" >
+      <img class="" [src]="skill.skillIcon" alt="Skill Icon">
+    </div>
+  </div>  
+
+  <div class="item-list d-flex flex-row">
+    <div *ngFor="let skill of skills | slice: 15:20"
+                  class="items justify-content-between d-flex flex-column align-self-center" >
+      <img class="" [src]="skill.skillIcon" alt="Skill Icon">
+    </div>
+  </div>  
+
+  <div class="item-list d-flex flex-row">
+    <div *ngFor="let skill of skills | slice: 20:22"
+                  class="items justify-content-between d-flex flex-column align-self-center" >
+      <img class="" [src]="skill.skillIcon" alt="Skill Icon">
+    </div>
+  </div>  
+
 </div>
 
+
+
 <!--Skills Section-->
-<div *ngIf="!screenSize" class="skills-sec d-flex flex-auto justify-content-center">
-  <div class="items d-flex flex-column justify-content-between">
-    <ul class="align-items-center">
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"></li>
-      <li><img src="https://seeklogo.com/images/R/rxjs-logo-DD3DF87EEF-seeklogo.com.png"></li>
-      <li><img src="https://static-00.iconduck.com/assets.00/jquery-original-wordmark-icon-485x512-7kn0h2yt.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"></li>
-      <li><img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"></li>
-      <li><img src="https://img.icons8.com/?size=512&id=40670&format=png"></li>
-      <li><img style="height: 60px;"src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/1200px-VB.NET_Logo.svg.png"></li>
-    </ul>
-    <ul class="align-items-center">
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"></li>
-      <li><img src ="https://ionicacademy.com/wp-content/uploads/2017/06/ionic-logo-portrait.png"></li>
-       <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkt5wzZ1LZXdBJSY1lele-BsBxzSxDph8TQA&s?"></li>
-      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdd25hyNQOMs4Xx1Cv_A_oaT0zagfSWlXMBA&s"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Firebase_Logo.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png"></li>
-      <li><img src="https://seeklogo.com/images/U/ubuntu-logo-9AB6506706-seeklogo.com.png"></li>
-      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"></li>
-      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx28mg8aQ39CEGURVztotd5VC0bO7Ik-ZpBw&s"></li>
-      <li><img src="https://www.drupal.org/files/Wordmark_blue_RGB.png"></li>
-    </ul>
+<div *ngIf="!screenSize" class="skills-sec d-flex flex-column  justify-content-center align-content-center align-items-center">
+
+  <div class="item-list d-flex flex-row">
+    <div *ngFor="let skill of skills | slice: 0:11"
+          class="items justify-content-between d-flex flex-column align-self-center" >
+      <img class="" 
+           [src]="skill.skillIcon" 
+           [ngStyle]=""alt="Skill Icon">
+    </div>
   </div>
+
+  <div class="item-list d-flex flex-row mt-5">
+    <div *ngFor="let skill of skills | slice: 11:22"
+                  class="items justify-content-between d-flex flex-column align-self-center" >
+      <img class="" [src]="skill.skillIcon" alt="Skill Icon">
+    </div>
+  </div>  
+
 </div>
+
+
+
 
 
 
@@ -101,7 +105,7 @@
     [style.background-color]="project.background_color">
 
     <div class="d-flex flex-column justify-content-center align-items-center">
-      <img [src]="project.image" palt="image">
+      <img [src]="project.image" alt="image">
       <div class="skills-list d-flex flex-wrap justify-content-center align-items-center">
       <p *ngFor="let skills of project.skills">{{skills}}</p>
       </div>
@@ -249,5 +253,4 @@
 </div>
 
 
-
-<!-- <app-footer></app-footer> -->
+<app-footer></app-footer>

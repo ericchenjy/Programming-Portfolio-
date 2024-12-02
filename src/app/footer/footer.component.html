@@ -1,15 +1,21 @@
-<div class="footer d-flex flex-row align-items-center">
+<div class="footer d-flex flex-row align-items-center justify-content-between">
 
     <div class="info-section d-flex flex-row align-items-center">
-        <p>About Me</p>
-        <p>Contact Me</p>
-        <p>Project</p>
+
+        <button (click)="pageRouter('about')">About</button>
+        <button (click)="pageRouter('contact')">Contact</button>
+        <button (click)="pageRouter('project')">Project</button>
+
     </div>
 
 
-    <div class="social-media-section">
-        Linkedin 
-        Github
-        Email
+    <div class="social-media-section justify-content-end ">
+
+    <a href="https://www.linkedin.com/in/ericchenjy/" target="_blank">
+        <img src="https://img.icons8.com/color/48/linkedin.png" >
+    </a>
+    <a href="https://github.com/ericchenjy" target="_blank">
+        <img src="https://img.icons8.com/material-outlined/48/github.png">
+    </a>
     </div>
 </div>

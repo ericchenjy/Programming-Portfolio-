@@ -1,0 +1,27 @@
+<app-menu-bar></app-menu-bar>
+
+<div class="project-details d-flex flex-column align-items-center" *ngIf="projectDetails">
+
+    <p class="title">{{projectDetails.project_name}}</p>
+
+    <img [src]="projectDetails.image" alt="{{projectDetails.project_name}}">
+
+  
+    <div class="extra-images d-grid">
+        <div  *ngFor="let image of projectDetails.extraImages">
+            <img [src]="image">
+        </div>
+    </div>
+
+    <div class="description">
+        {{projectDetails.project_description}}
+    </div>
+
+
+
+
+</div>
+
+
+
+<app-footer></app-footer>

@@ -5,7 +5,8 @@
   <div 
     *ngFor="let project of projectList" 
     class="peerly-project justify-content-around align-items-center" 
-    [style.background-color]="project.background_color">
+    [style.background-color]="project.background_color"
+    (click)="pageRouter(project.id)">
 
     <div class="d-flex flex-column justify-content-center align-items-center">
       <img [src]="project.image" alt="image">

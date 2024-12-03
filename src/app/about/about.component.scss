@@ -1,3 +1,12 @@
+.bio-section{
+    margin: 5%;
+    padding: 3%;
+    background-color: #EEFAFC;
+    color: #747171;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
 .work-section{
     .work-section-list{
         .experience{
@@ -23,14 +32,14 @@
                     width: 50px;
                     height: 50px;
                     border-radius: 100%;
-                    background-color: #E7FAFE;
+                    background-color: #EEFAFC;
                     position: absolute;
                 }
 
                 .line {
                     height: 13rem;
                     width: 10px;
-                    background-color: #E7FAFE;
+                    background-color: #EEFAFC;
                  
                 }
 
@@ -57,7 +66,7 @@
                     margin: 1% 0;
                     width: 90%;
                     height: 2px;
-                    background-color: #E7FAFE;
+                    background-color: #EEFAFC;
                     border-radius: 20px;
                 }
 
@@ -73,7 +82,7 @@
             width: 80%;
             height: 60px;
             border: none;
-            background-color: #E7FAFE;
+            background-color:#EEFAFC;
             border-radius: 20px;
         }
 
@@ -84,7 +93,19 @@
 
 }
 
+@media only screen and (max-width: 1200px){
+
+    .bio-section{
+        font-size: 18px;
+    }
+
+}
+
 @media only screen and (max-width: 899px){
+
+    .bio-section{
+        font-size: 16px;
+    }
 
     .work-section-mobile{
 
@@ -97,14 +118,14 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 100%;
-                    background-color: #E7FAFE;
+                    background-color:#EEFAFC;
                     position: absolute;    
                 }
 
                 .line {
                     height: 15rem;
                     width: 8px;
-                    background-color: #E7FAFE;
+                    background-color: #EEFAFC;
                 }
 
             }
@@ -145,7 +166,7 @@
                         margin: 1% 0;
                         width: 90%;
                         height: 2px;
-                        background-color: #E7FAFE;
+                        background-color: #EEFAFC;
                         border-radius: 20px;
                     }
                 }
@@ -161,7 +182,7 @@
                 width: 80%;
                 height: 60px;
                 border: none;
-                background-color: #E7FAFE;
+                background-color:#EEFAFC;
                 border-radius: 20px;
             }
     
@@ -205,6 +226,10 @@
 
 @media only screen and (max-width: 555px){
 
+    .bio-section{
+        font-size: 14px;
+    }
+
     .work-section-mobile{
         .work-section-list{
 
@@ -215,14 +240,14 @@
                     width: 30px;
                     height: 30px;
                     border-radius: 100%;
-                    background-color: #E7FAFE;
+                    background-color:#EEFAFC;
                     position: absolute;    
                 }
 
                 .line {
                     height: 13rem;
                     width: 6px;
-                    background-color: #E7FAFE;
+                    background-color: #EEFAFC;
                 }
 
             }
@@ -263,7 +288,7 @@
                         margin: 1% 0;
                         width: 90%;
                         height: 2px;
-                        background-color: #E7FAFE;
+                        background-color: #EEFAFC;
                         border-radius: 20px;
                     }
                 }
@@ -279,7 +304,7 @@
                 width: 80%;
                 height: 60px;
                 border: none;
-                background-color: #E7FAFE;
+                background-color: #EEFAFC;
                 border-radius: 20px;
             }
     
@@ -292,6 +317,10 @@
 
 
 @media only screen and (max-width: 450px){
+
+    .bio-section{
+        font-size: 14px;
+    }
 
     .skills-sec-mobile{
         width: 100%;
@@ -318,5 +347,12 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .bio-section{
+        font-size: 12px;
     }
 }

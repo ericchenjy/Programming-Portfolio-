@@ -1,8 +1,24 @@
-<app-menu-bar></app-menu-bar>
+<!--Project Section Mobile screen--------------------------->
+<div *ngIf="screenSize" class="project-section">
+
+  <!--Projects----------->
+  <div 
+    *ngFor="let project of projectList" 
+    class="peerly-project justify-content-around align-items-center" 
+    [style.background-color]="project.background_color">
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <img [src]="project.image" alt="image">
+      <div class="skills-list d-flex flex-wrap justify-content-center align-items-center">
+      <p *ngFor="let skills of project.skills">{{skills}}</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--Project Section-->
-<div class="project-section d-grid">
+<div *ngIf="!screenSize"class="project-section d-grid">
 
 <!--Projects----------->
   <div 

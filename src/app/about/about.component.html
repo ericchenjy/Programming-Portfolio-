@@ -1,7 +1,17 @@
-<app-menu-bar></app-menu-bar>
+<div class="bio-section d-flex flex-column justify-content-center">
+  <p class="intro">
+    Eric is a passionate Full-Stack Developer with a strong focus on front-end technologies and a growing expertise in back-end development. His skills include creating responsive, user-friendly applications using frameworks like Angular, HTML5, CSS3, and JavaScript. He enjoys designing clean, intuitive interfaces that enhance user experiences across different devices.</p>
+
+    <p class="intro">While his main strength lies in front-end development, he has a foundational understanding of back-end technologies, including Node.js, RESTful APIs, and database integration. He is comfortable working with back-end systems to connect the front-end with databases and services, and he is always eager to learn more to expand my back-end knowledge.</p>
+
+    <p class="intro"> Additionally, he has a passion for UI/UX design and use tools like Figma and Adobe XD to create designs that are both functional and visually appealing. He is dedicated to delivering solutions that meet users’ needs while also ensuring smooth integration between the front-end and back-end.</p>
+
+    <p class="intro">With a blend of development and design skills, he strives to create end-to-end applications that provide both high performance and exceptional user experiences.</p>
+
+</div>
 
 <!--Work Experience Mobile --------------------------------->
-<div *ngIf="screenSize"  class="work-section-mobile d-flex flex-column text-center mt-5">
+<div *ngIf="screenSize"  class="work-section-mobile d-flex flex-column text-center my-5">
 
     <!--Work List-->
       <div 
@@ -50,10 +60,10 @@
     </div>
   
   
-  </div>
+</div>
   
-  <!--Work Experience -->
-  <div *ngIf="!screenSize" class="work-section d-flex flex-column text-center  mt-5">
+<!--Work Experience -->
+<div *ngIf="!screenSize" class="work-section d-flex flex-column text-center  my-5">
   
     <div 
         *ngFor="let experiences of workExperiences" class="work-section-list">
@@ -99,5 +109,6 @@
       </div>
     </div>
   
-  </div>
+</div>
+
   

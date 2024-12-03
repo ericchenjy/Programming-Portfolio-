@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { projects } from '../project-data';
+import { Router } from '@angular/router';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-details',
@@ -13,8 +15,9 @@ export class ProjectDetailsComponent implements OnInit {
   projectId!: number;
   projectDetails: any;
   projectList = projects;
+  sanitizedDescription!: SafeHtml;
 
-  constructor(private route: ActivatedRoute){}
+  constructor(private route: ActivatedRoute, private router: Router, private sanitizer: DomSanitizer){}
 
   ngOnInit(): void{
     
@@ -29,5 +32,13 @@ export class ProjectDetailsComponent implements OnInit {
 
   loadProjectDetails(): void{
     this.projectDetails = projects.find(project => project.id === this.projectId);
+
+    if(this.projectDetails?.project_description){
+      this.sanitizedDescription = this.sanitizer.bypassSecurityTrustHtml(this.projectDetails.project_description)
+    }
+  }
+
+  pageRouter(path: string):void{
+    this.router.navigate([path])
   }
 }

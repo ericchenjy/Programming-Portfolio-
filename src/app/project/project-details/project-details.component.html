@@ -1,12 +1,19 @@
-<app-menu-bar></app-menu-bar>
+<div class="back-button d-flex flex-row align-items-center" (click)="pageRouter('project')">
+    <svg class="back-icon"(click)="pageRouter('/project')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg> 
+    <p>Back</p>
+</div>
 
 <div class="project-details d-flex flex-column align-items-center" *ngIf="projectDetails">
 
-    <p class="title">{{projectDetails.project_name}}</p>
+    <a 
+        *ngIf="projectDetails.website_link; else plainText"
+        class="title" 
+        [href]="projectDetails.website_link" 
+        target="_blank">{{projectDetails.project_name}}</a>
+
 
     <img [src]="projectDetails.image" alt="{{projectDetails.project_name}}">
 
-  
     <div class="extra-images d-grid">
         <div  *ngFor="let image of projectDetails.extraImages">
             <img [src]="image">
@@ -14,14 +21,29 @@
     </div>
 
     <div class="description">
+        <div class="d-flex flex-row justify-content-between mb-2">
+            <a 
+                *ngIf="projectDetails.website_link; else plainTextDescription"
+                class="title"
+                [href]="projectDetails.website_link" target="_blank">
+                <b>{{projectDetails.project_name}}</b>
+            </a>
+            <div class="date">
+                <b>{{projectDetails.date}}</b>
+            </div>
+
+        </div>
         {{projectDetails.project_description}}
     </div>
 
+    <ng-template #plainText>
+        <p class="title-no-link">{{projectDetails.project_name}}</p>
+    </ng-template>
 
+    <ng-template #plainTextDescription>
+        <p class="title-no-link-description">{{projectDetails.project_name}}</p>
+    </ng-template>
 
 
 </div>
 
-
-
-<app-footer></app-footer>

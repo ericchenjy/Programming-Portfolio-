@@ -7,13 +7,18 @@
 @import "bootstrap/scss/bootstrap";
 
 // Your custom styles
-html, body { height: 100%; }
+html, body {  
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
-body { margin: 0; 
-       padding: 0;
-       font-family: Roboto, "Helvetica Neue", sans-serif;
-
-       display: inline-block;
-
+body {
+    height: 100vh; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     width: 100%;
+}
+
+app-root{
+    height: 100dvh;
 }

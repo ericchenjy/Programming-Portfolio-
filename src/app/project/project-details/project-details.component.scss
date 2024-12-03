@@ -1,11 +1,39 @@
+.back-button{
+
+    margin: 5% 0 0 12%;
+    cursor: pointer;
+
+    .back-icon{
+        fill:#0cc0df;
+        background: none;
+        width: 24px;
+    }
+
+    p{
+        color:#0cc0df;
+        font-size: 35px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.back-button:hover{
+    opacity: 70%;
+}
+
 .project-details{
 
-    margin-top: 6rem;
+    margin-top: 3rem;
 
     .title{
         font-size: 80px;
         padding: 0;
         margin: 0;
+        color: black;
+    }
+
+    .title:hover{
+        opacity: 70%;
     }
     
     img{
@@ -23,8 +51,323 @@
     }
 
     .description{
+
+        .title{
+            font-size: 24px;
+            color:#0cc0df;
+        }
+
+        .title:hover{
+            opacity: 70%;
+        }
+
+        .date{
+            font-size: 24px;
+        }
+
         font-size: 20px;
         margin: 5%;
         width: 90%;
+
     }
+
+    .title-no-link{
+        font-size: 80px;
+        padding: 0;
+        margin: 0;
+        color: black;
+    }
+
+    .title-no-link-description{
+        font-size: 24px;
+            color:#0cc0df;
+    }
+
+}
+
+@media only screen and (max-width:1400px){
+
+    .back-button{
+        margin: 4% 0 0 8%;
+    
+        .back-icon{
+            width: 20px;
+        }
+    
+        p{
+            font-size: 30px;
+        }
+    }
+
+    .project-details{  
+
+
+        margin-top: 3rem;
+    
+        .title{
+            font-size: 70px;
+        }
+
+        img{
+            width: 60%;
+        }
+
+    }
+
+    .title-no-link{
+        font-size: 70px;
+    }
+
+}
+
+@media only screen and (max-width:1100px){
+
+    .back-button{
+        margin: 3% 0 0 6%;
+    
+        .back-icon{
+            width: 16px;
+        }
+    
+        p{
+            font-size: 25px;
+        }
+    }
+
+    .project-details{  
+        .title{
+            font-size: 60px;
+        }
+
+        img{
+            width: 70%;
+        }
+    } 
+
+    .title-no-link{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+
+    .back-button{
+        margin: 5% 0 0 5%;
+    
+        .back-icon{
+            width: 14px;
+        }
+    
+        p{
+            font-size: 23px;
+        }
+    }
+
+
+    .project-details{  
+        margin-top: 2rem;
+    
+        .title{
+            font-size: 50px;
+        }
+    
+        img{
+            width: 90%;
+        }
+
+        .extra-images{
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+            gap: 0.5%;
+ 
+    
+            img{
+                width: 100%;
+            }
+        }
+
+        .description{
+            margin-top: 10% !important;
+
+            .title{
+                font-size: 20px;
+                color:#0cc0df;
+            }
+    
+            .date{
+                font-size: 20px;
+            }
+
+            font-size: 16px;
+            margin: 8%;
+            width: 90%;
+        }
+
+        .title-no-link{
+            font-size: 50px;
+        }
+    
+        .title-no-link-description{
+            font-size: 20px;
+        }
+
+    }
+    
+}
+
+@media only screen and (max-width: 650px){
+    .project-details{  
+        .description{
+
+            .title{
+                font-size: 16px;
+                color:#0cc0df;
+            }
+    
+            .date{
+                font-size: 16px;
+            }
+        }
+
+        .title-no-link-description{
+            font-size: 16px;
+            color:#0cc0df;
+        }
+    }
+}
+
+@media only screen and (max-width:550px){
+    .back-button{
+        margin: 3% 0 0 5%;
+    
+        .back-icon{
+            width: 12px;
+        }
+    
+        p{
+            font-size: 20px;
+        }
+    }
+
+
+    .project-details{  
+        margin-top: 2rem;
+    
+        .title{
+            font-size: 40px;
+        }
+
+        .title-no-link{
+            font-size: 40px;
+        }
+    } 
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .project-details{
+        .description{
+
+            .title{
+                font-size: 16px;
+                color:#0cc0df;
+            }
+    
+            .date{
+                font-size: 16px;
+            }
+            font-size: 13px;
+            margin: 9%;
+            width: 90%;
+        }
+
+        .title-no-link-description{
+            font-size: 16px;
+            color:#0cc0df;
+        }
+
+    }
+    
+}
+
+
+@media only screen and (max-width:450px){
+    .back-button{
+        margin: 3% 0 0 4.5%;
+    
+        .back-icon{
+            width: 11px;
+        }
+    
+        p{
+            font-size: 16px;
+        }
+    }
+
+
+    .project-details{  
+        margin-top: 1rem;
+    
+        .title{
+            font-size: 28px;
+        }
+
+        img{
+            width: 90%;
+        }
+
+        .description{
+
+            .title{
+                font-size: 14px;
+                color:#0cc0df;
+            }
+    
+            .date{
+                font-size: 14px;
+            }
+        }
+
+        .title-no-link{
+            font-size: 28px;
+        }
+    
+        .title-no-link-description{
+            font-size: 14px;
+            color:#0cc0df;
+        }
+    } 
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .project-details{
+        .description{
+
+            .title{
+                font-size: 12px;
+                color:#0cc0df;
+            }
+    
+            .date{
+                font-size: 12px;
+            }
+
+            font-size: 10px;
+            margin: 9%;
+            width: 90%;
+        }
+
+    
+        .title-no-link-description{
+            font-size: 12px;
+            color:#0cc0df;
+        }
+
+    }
+    
 }

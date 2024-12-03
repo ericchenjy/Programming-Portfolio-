@@ -1,6 +1,3 @@
-<app-menu-bar></app-menu-bar>
-
-
 <!--Name and Image Mobile Screen--------------------------->
 <div *ngIf="screenSize" class="name-image-mobile d-flex flex-column align-items-center">
 
@@ -102,7 +99,8 @@
   <div 
     *ngFor="let project of projectList | slice: 0:3" 
     class="peerly-project justify-content-around align-items-center" 
-    [style.background-color]="project.background_color">
+    [style.background-color]="project.background_color"
+    (click)="pageRouterProject(project.id)">
 
     <div class="d-flex flex-column justify-content-center align-items-center">
       <img [src]="project.image" alt="image">
@@ -113,7 +111,7 @@
   </div>
 
   <div class="more-section d-flex flex-none justify-content-center w-100">
-    <button (click)="pageRouter('/project')" class="project-button w-100"> More Projects...</button>
+    <button (click)="pageRouter('/project')" class="project-button w-100"> More Projects</button>
   </div>
 
 </div>
@@ -125,7 +123,8 @@
   <div 
     *ngFor="let project of projectList | slice: 0:3" 
     class="peerly-project justify-content-around align-items-center" 
-    [style.background-color]="project.background_color">
+    [style.background-color]="project.background_color"
+    (click)="pageRouterProject(project.id)">
 
     <div class="d-flex flex-column justify-content-center align-items-center">
       <img [src]="project.image" palt="image">
@@ -136,7 +135,7 @@
   </div>
 
   <div class="more-section d-flex flex-none justify-content-center w-100">
-    <button (click)="pageRouter('/project')" class="project-button w-100"> More Projects...</button>
+    <button (click)="pageRouter('/project')" class="project-button w-100"> More Projects</button>
   </div>
 
 </div>
@@ -194,7 +193,7 @@
   </div>
 
   <div class="more-work-experience mt-5">
-    <button (click)="pageRouter('/about')">More Job Experience...</button>
+    <button (click)="pageRouter('/about')">More Job Experience</button>
   </div>
 
 </div>
@@ -247,10 +246,8 @@
   </div>
 
   <div class="more-work-experience mt-5">
-    <button (click)="pageRouter('/about')">More Job Experience...</button>
+    <button (click)="pageRouter('/about')">More Job Experience</button>
   </div>
 
 </div>
 
-
-<app-footer></app-footer>

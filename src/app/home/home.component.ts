@@ -11,17 +11,21 @@ import { skills } from './skills';
 })
 
 export class HomeComponent {
-  screenSize: boolean = window.innerWidth < 900;
-
+  
   projectList = projects;
   workExperiences = workExperiences;
   skills = skills;
+  screenSize: boolean = window.innerWidth < 900;
 
   constructor(private router: Router){
   }
   
   pageRouter(path: string): void{
     this.router.navigate([path]);
+  }
+
+  pageRouterProject(id: number):void{
+    this.router.navigate(['project-details', id]);
   }
 
 

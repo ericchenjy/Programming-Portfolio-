@@ -1,4 +1,4 @@
-<!--Screen size bigger than 600-->
+<!--Screen size bigger than 900-->
 <nav *ngIf="!screenSize" class="header	d-flex justify-content-start p-0 mt-0">
   <div class="logo-section justify-content-center">
     <img (click)="pageRouter('/home')"
@@ -19,7 +19,7 @@
 <!-- </d-none d-lg-flex d-xl-flex w-100 >  d-lg-none-->
 
 
-<!--Screen size smaller than 600-->
+<!--Screen size smaller than 900-->
 <nav  *ngIf="screenSize" class="header-sm w-100  d-flex flex-auto flex-column">
 
   <div class="d-flex flex-auto flex-row justify-content-between">
@@ -45,7 +45,7 @@
    </div>
 
   <div>
-    <menu *ngIf="!menuList" class="menu-section-sm d-flex flex-none flex-column p-0">
+    <menu *ngIf="!menuList" class="menu-section-sm d-flex flex-none flex-column p-0 m-0">
       <button (click)="pageRouter('/home')">Home</button>
       <button (click)="pageRouter('/project')">Project</button>
       <button (click)="pageRouter('/about')">About</button>

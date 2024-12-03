@@ -6,7 +6,7 @@ export const workExperiences =  [
         work_dates: "Apr 2022 - Jan 2024",
         work_location: "Burlington, Ontario, Canada",
         work_commpany: "Peerly",
-        work_description: "Angular/Ionic Framework, Google Firebase, Node.js, Typescript, Javascript, RxJS, Rest API, HTML, SCSS,Bootstrap, Git, Figma, Material Design"
+        work_description: "Angular/Ionic Framework, Google Firebase, Node.js, TypeScript, JavaScript, RxJS, Rest API, HTML, SCSS, Bootstrap, Git, Figma, Material Design"
 
     },
 
@@ -16,7 +16,7 @@ export const workExperiences =  [
         work_dates: "Jan 2021 - Aug 2021",
         work_location: "Guelph, Ontario, Canada",
         work_commpany: "University of Guelph",
-        work_description: "Worked on GyphForms (BP Logix), Quality Assurance Testing, Hardware Troubleshooting, IT Support, Data Erasure"
+        work_description: "GyphForms (BP Logix), Quality Assurance Testing, Hardware Troubleshooting, IT Support, Data Erasure"
 
     },
 
@@ -28,7 +28,7 @@ export const workExperiences =  [
         work_dates: "Jun 2020 - Aug 2020",
         work_location: "Guelph, Ontario, Canada",
         work_commpany: "Univeristy of Guelph",
-        work_description: "Zoom/Microsoft Teams Support, Formatting/Designing Course outlines, Developed/Designed infographics (Canvas), Trello, Microsoft Planner"
+        work_description: "Zoom/Microsoft Teams Support, Formatting/Designing Course Outlines, Developed/Designed Infographics (Canvas), Trello, Microsoft Planner"
 
     },
 

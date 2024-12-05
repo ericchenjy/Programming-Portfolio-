@@ -9,14 +9,13 @@
     }
 
     .details{
-        
-        // text-align: center;
-        font-size: 26px;
+        margin: 2% 3% 0 3%;
+        font-size: 24px;
     }
 
     .email{
-       
-        font-size: 24px;
+        margin: 3.5% 3% 0 3%;
+        font-size: 22px;
     }
 
 }
@@ -26,13 +25,12 @@
     .contact-info{
 
         .header{
+            padding: 2%;
             font-size: 50px;
         }
     
         .details{
-            
-            text-align: center;
-            font-size: 24px;
+            font-size: 22px;
         }
     
         .email{
@@ -51,12 +49,11 @@
         padding: 10%;
 
         .header{
+            padding: 2%;
             font-size: 40px;
         }
     
         .details{
-            
-            text-align: center;
             font-size: 22px;
         }
     
@@ -67,3 +64,52 @@
     }
 
 }
+
+@media only screen and (max-width: 450px) {
+
+    
+    .contact-info{
+
+        padding: 10%;
+
+        .header{
+            font-size: 30px;
+        }
+    
+        .details{
+            padding: 1.5%;
+            font-size: 19px;
+        }
+    
+        .email{
+            font-size: 14px;
+        }
+    
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    
+    .contact-info{
+
+        padding: 10%;
+
+        .header{
+            font-size: 26px;
+        }
+    
+        .details{
+            padding: 1%;
+            font-size: 16px;
+        }
+    
+        .email{
+            font-size: 12px;
+        }
+    
+    }
+
+}
+

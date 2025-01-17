@@ -58,8 +58,12 @@
             }
         }
 
+        .menu-icon{
+            padding: 0;
+
+        }
         .menu-icon-click{
-            width: 30px;
+            width: 38px;
             fill: #0cc0df;
             cursor: pointer;
         }
@@ -69,7 +73,7 @@
         }
 
         .menu-icon-click-after{
-            width: 30px;
+            width: 38px;
             fill: #0cc0df;
             cursor: pointer;
             rotate: 90deg;

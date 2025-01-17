@@ -42,8 +42,8 @@
 
     .extra-images{
         grid-template-columns: repeat(2, 1fr);
-        gap: 2%;
-        padding: 5%;
+        gap: 1%;
+        padding: 5%; 
 
         img{
             width: 100%;
@@ -52,6 +52,7 @@
 
     .description{
 
+        margin-top: 10% !important;
         .title{
             font-size: 24px;
             color:#0cc0df;
@@ -179,15 +180,14 @@
             grid-template-columns: repeat(1, 1fr);
             text-align: center;
             gap: 0.5%;
- 
-    
+
             img{
                 width: 100%;
             }
         }
 
         .description{
-            margin-top: 10% !important;
+            margin-top: 50% !important;
 
             .title{
                 font-size: 20px;

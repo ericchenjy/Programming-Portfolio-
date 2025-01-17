@@ -2,6 +2,49 @@ export const projects = [
 
     {
         id: 1,
+        project_name: "ICDigitalss",
+        background_color: "#E7FAFE",
+        image: "assets/Images/ICDigitalss.png",
+        
+        skills: [
+            "Figma",
+            "Angular Framework",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "RxJS",
+            "MongoDB",
+            "Firebase",
+            "AWS S3",
+            "Google MAP API",
+            "Twilio",
+       
+        ],
+
+        //extra information for project-details component
+        extraImages: [
+            "assets/Images/1 IC.png",
+            "assets/Images/2 IC.png",
+            "assets/Images/3 IC.png",
+            "assets/Images/4 IC.png",
+            "assets/Images/Desktop 1 Home.png",
+            "assets/Images/Desktop 2 Home - Card 1.png",
+            "assets/Images/Desktop 3 Home - Card 2.png",
+            "assets/Images/Desktop 4 Home - Card 3.png",
+            "assets/Images/Desktop 5 Home Notifications.png",
+            "assets/Images/Desktop 6 Search.png",
+            "assets/Images/Desktop 7 Appointments.png",
+            "assets/Images/Desktop 8 Appointments.png",
+            "assets/Images/Desktop 9 Appointment - Sign Up.png",
+            "assets/Images/Desktop 10.png",
+        ],
+        date: "November 2024 - Present",
+        project_description: "• Currently designing and developing an app that allows people to find local photographers and videographers to book services. Planning features: Human Identity Verification for Professionals, Google Maps for Navigation, Messaging with Business Owners, and an Explore Page that Auto-Generate Photos. Intended for mobile and we platforms, using Figma, Angular Framework, TypeScript, HTML, SCSS, Tailwind CSS, Bootstrap, RxJS, Node.js, MongoDB, Firebase, AWS S3, Google Maps API, Twilio, and Netlify",
+    },
+
+    {
+        id: 2,
         project_name: "Peerly Agent Platform",
         background_color: "#E7FAFE",
         image: "assets/Images/Peerly Project.png",
@@ -9,10 +52,10 @@ export const projects = [
         skills: [
             "Angular Framework",
             "TypeScript",
-            "Nodes.js",
             "HTML",
             "CSS",
-            "BootStrap",
+            "Bootstrap",
+            "Nodes.js",
             "Figma"
         ],
 
@@ -32,14 +75,14 @@ export const projects = [
     },
 
     {
-        id: 2,
+        id: 3,
         project_name: "EC Digitalss" ,
         background_color: "#D7F1F5",
         image: "assets/Images/EC Digitalss Project.png",
         skills: [
             "HTML",
             "CSS",
-            "BootStrap",
+            "Bootstrap",
             "Figma",
             "Netlify"
         ],
@@ -58,7 +101,7 @@ export const projects = [
     },
 
     {
-        id: 3,
+        id: 4,
         project_name: "Tour Of Heroes",
         background_color: "#D7F1F5",
         image: "assets/Images/Component 1 (1).png",
@@ -67,7 +110,7 @@ export const projects = [
             "TypeScript",
             "HTML",
             "CSS",
-            "BootStrap",
+            "Bootstrap",
             "Figma"
         ],
         extraImages: [
@@ -81,7 +124,7 @@ export const projects = [
     },
 
     {
-        id: 4,
+        id: 5,
         project_name: "University of Guelph FRT Design",
         background_color: "#E7FAFE",
         image: "assets/Images/Component 1 (2).png",

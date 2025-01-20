@@ -25,12 +25,16 @@ export const projects = [
         //extra information for project-details component
         extraImages: [
             "assets/Images/1 IC.png",
+            "assets/Images/5 IC.png",
             "assets/Images/2 IC.png",
             "assets/Images/3 IC.png",
             "assets/Images/4 IC.png",
             "assets/Images/Desktop 1 Home.png",
             "assets/Images/Desktop 2 Home - Card 1.png",
             "assets/Images/Desktop 3 Home - Card 2.png",
+            "assets/Images/Review 1.png",
+            "assets/Images/Review 2.png",
+            "assets/Images/Review 3.png",
             "assets/Images/Desktop 4 Home - Card 3.png",
             "assets/Images/Desktop 5 Home Notifications.png",
             "assets/Images/Desktop 6 Search.png",

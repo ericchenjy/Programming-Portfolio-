@@ -74,6 +74,16 @@
                 margin: 0.5rem 1.2rem;
                 width: 60px;
             }
+
+     
+                p{
+                    font-size: 13px;
+                    margin: 0 1% 2% 1%;
+                    background-color: white;
+                    width: fit-content;
+                    border-radius: 20px;
+                    padding: 0.5% 3%;                
+                }
         }
     }
 
@@ -107,13 +117,6 @@
         width: 100%;
         height: 100%;
 
-        .title{
-            margin: 3% 0 0 0;
-            font-size: 50px;
-            padding: 0;
-            color:#0cc0df;
-        }
-
         img{
             height: 70%;
             width: 70%;
@@ -125,13 +128,11 @@
 
                 p{
                     font-size: 13px;
-                    margin: 0 1% 4% 0;
+                    margin: 0 1% 2% 1%;
                     background-color: white;
                     width: fit-content;
                     border-radius: 20px;
-                    padding: 0.5% 2.5%;
-                    width: max-content;
-                    height: max-content;        
+                    padding: 0.5% 2.4%;                
                 }
             }
     }
@@ -261,6 +262,15 @@
 @media only screen and (max-width: 899px){
 
     .project-section{
+
+        .peerly-project{
+                .skills-list{
+    
+                    p{
+                        font-size: 11px;             
+                    }
+                }
+        }
 
         .more-section{
             width: 100%; 
@@ -551,6 +561,15 @@
 @media only screen and (max-width: 450px){
 
     .project-section{
+
+        .peerly-project{
+            .skills-list{
+
+                p{
+                    font-size: 8px;             
+                }
+            }
+    }
 
         .more-section{
             width: 100%; 

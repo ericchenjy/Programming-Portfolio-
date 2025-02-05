@@ -7,19 +7,19 @@ export const projects = [
         image: "assets/Images/IC Digitalss.png",
         
         skills: [
-            "Figma",
-            "Angular Framework",
+            "Angular",
             "TypeScript",
             "HTML",
-            "CSS",
+            "SCSS",
+            "Tailwind CSS",
             "Bootstrap",
             "RxJS",
-            "MongoDB",
+            "Node.js",
             "Firebase",
             "AWS S3",
-            "Google MAP API",
             "Twilio",
-       
+            "Netlify",
+            "Figma",
         ],
 
         //extra information for project-details component
@@ -45,7 +45,7 @@ export const projects = [
             "assets/Images/14 W.png",
         ],
         date: "November 2024 - Present",
-        project_description: "• Currently designing and developing an app that allows people to find local photographers and videographers to book services. Planning features: Human Identity Verification for Professionals, Google Maps for Navigation, Messaging with Business Owners, and an Explore Page that Auto-Generate Photos. Intended for mobile and we platforms, using Figma, Angular Framework, TypeScript, HTML, SCSS, Tailwind CSS, Bootstrap, RxJS, Node.js, MongoDB, Firebase, AWS S3, Google Maps API, Twilio, and Netlify",
+        project_description: "Currently designing and developing an application that enables users to discover and book local professional and freelance photographers and videographers. The platform features advanced functionalities, including Human Identity Verification for Business Accounts, integrated Google Maps for navigation, Direct Messaging with Business Owners, an Explore Page showcasing auto-generated photos, and AI-powered Voice Search. Designed for mobile and web platforms using Figma, Angular/Angular.js, TypeScript, HTML, SCSS, Tailwind CSS, Bootstrap, RxJS, Node.js, Firebase, AWS S3, Twilio, and Netlify.",
     },
 
     {
@@ -55,11 +55,14 @@ export const projects = [
         image: "assets/Images/Peerly Project.png",
         
         skills: [
-            "Angular Framework",
+            "Angular",
+            "Anuglar.js",
             "TypeScript",
             "HTML",
-            "CSS",
+            "SCSS",
+            "Tailwind CSS",
             "Bootstrap",
+            "RxJS",
             "Nodes.js",
             "Figma"
         ],
@@ -76,7 +79,7 @@ export const projects = [
         
         ],
         date: "April 2022 - December 2022",
-        project_description: "I redesigned and redeveloped the platform using Figma, Node.js, Angular Framework, TypeScript, HTML5, SCSS, and Bootstrap. The software allows political campaigns to send 10,000+ text messages within minutes. The sofware was developed in bright and dark mode. This resulated a 40% improvement in the User Experience of the Agent Platform, resulting in increased usability, higher customer satisfaction, a 50% reduction in customer service inquiries, and less reliance on walkthrough guides. During the project I addressed the top 50 highest-priority user experience bugs in the Peerly Agent UI that generated the most customer inquiries. I also Assisted the team in sending over 17 million texts in one day during the 2022 United States Elections with the newly developed Agent Platform.",
+        project_description: "Redesigned and redeveloped the Agent Platform, achieving a 40% improvement in user experience, a 30% reduction in customer service inquiries, and enabling political campaigns to send over 10,000 text messages within minutes. The new Agent Platform facilitated the delivery of over 17 million texts in a single day during the 2022 U.S. Election, setting a company milestone and earning the 2023 Pollie Award Gold Medal for Best Use of Mobile Application/Technology. Built the application with Angular/Angular.js, TypeScript, HTML, RxJS, and Node.js, leveraging Firebase cloud database management to optimize data retrieval and REST APIs efficiency. Designed responsive and accessible UI/UX with Figma, Tailwind CSS, and Bootstrap, ensuring cross-device compatibility and delivering seamless user experiences.",
     },
 
     {
@@ -88,8 +91,8 @@ export const projects = [
             "HTML",
             "CSS",
             "Bootstrap",
-            "Figma",
-            "Netlify"
+            "Netlify",
+            "Figma"
         ],
         extraImages: [
             "assets/Images/1.png",
@@ -100,7 +103,7 @@ export const projects = [
             "assets/Images/6.png",
         ],
         date: "December 2020 - January 2021",
-        project_description: "Designed and developed a personal photography business website using Figma, HTML, CSS, JavaScript, and Bootstrap, resulting in a 20% increase in business growth.",
+        project_description: "Developed a photography business website that resulted in a 20% increase in business growth using HTML, CSS, Bootstrap, and Netlify.",
         website_link:"https://www.ecdigitalss.com/"
 
     },
@@ -111,12 +114,12 @@ export const projects = [
         background_color: "#D7F1F5",
         image: "assets/Images/Component 1 (1).png",
         skills: [
-            "Angular Framework",
+            "Angular",
             "TypeScript",
             "HTML",
             "CSS",
             "Bootstrap",
-            "Figma"
+            "Figma",
         ],
         extraImages: [
             "assets/Images/DETAILS (1).png",
@@ -126,27 +129,6 @@ export const projects = [
         date: "April 2022",
         project_description: "Redesigned and redeveloped the Angular Tour of Heroes using the Angular Framework, TypeScript, HTML, CSS, Bootstrap, and Figma, enhancing the user interface and adding more functionality."
 
-    },
-
-    {
-        id: 5,
-        project_name: "University of Guelph FRT Design",
-        background_color: "#E7FAFE",
-        image: "assets/Images/Component 1 (2).png",
-        skills: [
-            "Figma"
-        ],
-        extraImages: [
-            "assets/Images/Component 167.png",
-            "assets/Images/Component 118.png",
-            "assets/Images/Component 134.png",
-            "assets/Images/Component 103.png",
-            "assets/Images/PERSONAL EXPENSE REPORT 1.png",
-            "assets/Images/PERSONAL EXPENSE REPORT 5.png"
-
-        ],
-        date: "November 2020",
-        project_description: "Worked in a team of 4 and assisted the University of Guelph First Response Team in designing a prototype website using Figma. (Part of System Analysis and Design in Applications Course) "
     },
     
 ]

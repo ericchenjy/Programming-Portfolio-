@@ -6,7 +6,7 @@ export const workExperiences =  [
         work_dates: "Apr 2022 - Jan 2024",
         work_location: "Burlington, Ontario, Canada",
         work_commpany: "Peerly",
-        work_description: "Angular/Ionic Framework, Google Firebase, Node.js, TypeScript, JavaScript, RxJS, Rest API, HTML, SCSS, Bootstrap, Git, Figma, Material Design"
+        work_description: "Angular, Angular.js, TypeScript, JavaScript, RxJS, HTML, SCSS, Bootstrap, Material UI, Tailwind CSS, Ionic, Node,js, Firebase, Git, Figma"
 
     },
 
@@ -19,8 +19,6 @@ export const workExperiences =  [
         work_description: "GyphForms (BP Logix), Quality Assurance Testing, Hardware Troubleshooting, IT Support, Data Erasure"
 
     },
-
-    
 
     {
         work_logo: "assets/Images/University of Guelph.png",
@@ -38,7 +36,7 @@ export const workExperiences =  [
         work_dates: "Sep 2019 - Dec 2019",
         work_location: "Ottawa, Ontario, Canada",
         work_commpany: "Health Canada",
-        work_description: "Web Content, HTML, Adobe Dreamweaver, Drupal Technical Support"
+        work_description: "Web Content, HTML, Adobe Dreamweaver, Drupal, Technical Support"
 
     },
 
@@ -49,7 +47,15 @@ export const workExperiences =  [
         work_location: "Guelph, Ontario, Canada",
         work_commpany: "KazaMeza",
         work_description: "Customer Service, Kitchen Helper, Cleaner"
+    },
 
+    {
+        work_logo: "assets/Images/Vincent Massey Highschool - Logo.png",
+        work_title: "Scratch Program Volunteer Instructor ",
+        work_dates: "Jan 2017 - May 2017",
+        work_location: "Brandon, Manitoba, Canada",
+        work_commpany: "Vincent Massey High School",
+        work_description: "Taught middle school students Sratch programming language"
     }
 
 ]

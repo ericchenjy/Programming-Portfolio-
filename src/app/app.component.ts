@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationStart, Router} from '@angular/router';
+import { NavigationEnd, NavigationStart, Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,11 +14,12 @@ export class AppComponent implements OnInit {
   ngOnInit(): void{
 
     this.router.events.subscribe(event=>{
-      if(event instanceof NavigationStart){
-        window.scrollTo(0,0);
+      if(event instanceof NavigationEnd){
+        setTimeout(() =>{
+          window.scrollTo({top: 0, behavior: 'smooth'});
+        },100);
       }
-    })
+    });
+    
   }
-
-
 }
